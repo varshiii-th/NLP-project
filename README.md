@@ -1,19 +1,10 @@
 # Aspect-Based Sentiment Analysis — TF-IDF vs BERT vs RoBERTa
 
-Implements the project proposal: aspect term extraction (ATE, BIO sequence labelling) and aspect-level
+Aspect term extraction (ATE, BIO sequence labelling) and aspect-level
 sentiment classification (ASC, sentence + aspect pair input) on **SemEval-2014 Task 4 Laptops** and **MAMS**,
 with in-domain and cross-dataset evaluation, an end-to-end ATE→ASC pipeline, and error analysis.
 
-## Deliverables
 
-| Item | Location |
-|---|---|
-| Report (ACL 2023 format, 11 pages) | `report/ABSA_Report.pdf` (Word source `report/ABSA_Report.docx`; LaTeX version `report/ABSA_Report.tex` + `acl2023.sty` + `figures/`). Regenerate: `python report/make_report.py` |
-| Video script (15-20 min) | `presentation/VIDEO_SCRIPT.md` |
-| Final presentation | `presentation/ABSA_Final_Presentation.pptx` (+ `.pdf`; regenerate: `python presentation/build_deck.py`) |
-| Notebook with results and live demo | `ABSA_Notebook.ipynb` |
-| Contribution statement template | `report/CONTRIBUTIONS_TEMPLATE.md` |
-| v1 results / v2 results | `results/`, `results_v2/` (`results_v2/IMPROVEMENTS.md` = v1 → v2 comparison) |
 
 To compile the report: upload `report/ABSA_Report.tex`, `report/acl2023.sty` and the `report/figures/` folder to
 Overleaf (pdfLaTeX), or locally `pdflatex ABSA_Report && pdflatex ABSA_Report` inside `report/`.
