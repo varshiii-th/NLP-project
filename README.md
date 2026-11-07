@@ -6,8 +6,6 @@ with in-domain and cross-dataset evaluation, an end-to-end ATE→ASC pipeline, a
 
 
 
-To compile the report: upload `report/ABSA_Report.tex`, `report/acl2023.sty` and the `report/figures/` folder to
-Overleaf (pdfLaTeX), or locally `pdflatex ABSA_Report && pdflatex ABSA_Report` inside `report/`.
 
 ## Run
 
