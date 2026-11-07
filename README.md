@@ -19,7 +19,7 @@ python run_v2.py --report-only           # rebuild v2 tables/figures from finish
 ```
 
 Measured on an RTX 4060 Laptop GPU (8 GB): v1 ≈ 17 min, v2 ≈ 75 min of training.
-AI assistance: the code in this repository was written with the help of an AI coding assistant.
+
 
 Finished transformer runs are skipped on re-run (resumable); pass `--fresh` to retrain, `--save-models` to keep checkpoints.
 
