@@ -1,0 +1,7 @@
+dataset,split,sentences,sentences_with_aspects,aspect_terms(all),asc_instances,negative,neutral,positive
+semeval,train,2741,1342,2133,2092,786,417,889
+semeval,val,304,146,225,221,80,43,98
+semeval,test,800,422,654,638,128,169,341
+mams,train,4297,4297,11186,11186,2764,5042,3380
+mams,val,500,500,1332,1332,325,604,403
+mams,test,500,500,1336,1336,329,607,400

@@ -1,0 +1,27 @@
+# trained model checkpoints (hundreds of MB each; GitHub rejects files > 100 MB)
+models/
+*.pt
+*.bin
+*.safetensors
+
+# regenerable caches and run logs
+results/cache/
+results_v2/cache/
+*.pkl
+*.log
+*.err
+results_quick/
+results_v2_quick/
+
+# large unused file from the ACL template (only acl2023.sty / acl_natbib.bst are needed)
+report/acl2023_template/anthology.bib
+
+# Python / IDE / OS / Office temp files
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.idea/
+.vscode/
+~$*
+Thumbs.db
+.DS_Store
