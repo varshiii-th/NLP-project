@@ -1,0 +1,593 @@
+18:10:33 command: run_v2.py
+18:10:45 [baseline] ATE LR tagger trained on semeval (best C=10) in 10.7s
+18:10:48   ATE  TF-IDF+LR  semeval->semeval: P=0.6252 R=0.5382 F1=0.5785
+18:10:51   ATE  TF-IDF+LR  semeval->mams: P=0.5483 R=0.1190 F1=0.1956
+18:10:52 [baseline] ASC TF-IDF+LR trained on semeval (best C=1) in 0.7s
+18:10:52   ASC  TF-IDF+LR  semeval->semeval: acc=0.6708 macroF1=0.6067
+18:10:52   ASC  TF-IDF+LR  semeval->mams: acc=0.4476 macroF1=0.4465
+18:10:53 [baseline] ASC TF-IDF+SVM trained on semeval (best C=0.1) in 1.2s
+18:10:53   ASC  TF-IDF+SVM semeval->semeval: acc=0.6646 macroF1=0.5918
+18:10:53   ASC  TF-IDF+SVM semeval->mams: acc=0.4274 macroF1=0.4189
+18:11:17 [baseline] ATE LR tagger trained on mams (best C=3) in 24.0s
+18:11:20   ATE  TF-IDF+LR  mams->semeval: P=0.2398 R=0.0719 F1=0.1106
+18:11:23   ATE  TF-IDF+LR  mams->mams: P=0.6678 R=0.7058 F1=0.6863
+18:11:33 [baseline] ASC TF-IDF+LR trained on mams (best C=3) in 9.3s
+18:11:33   ASC  TF-IDF+LR  mams->semeval: acc=0.5925 macroF1=0.5234
+18:11:33   ASC  TF-IDF+LR  mams->mams: acc=0.7148 macroF1=0.7030
+18:11:35 [baseline] ASC TF-IDF+SVM trained on mams (best C=0.3) in 2.1s
+18:11:35   ASC  TF-IDF+SVM mams->semeval: acc=0.5784 macroF1=0.5112
+18:11:35   ASC  TF-IDF+SVM mams->mams: acc=0.7253 macroF1=0.7127
+18:11:39 
+=== RoBERTa-base v2 ATE - train: SemEval-14 Laptop | epochs=8 lr=5e-05 bs=16
+18:11:41   encoded train=2741 val=304 in 0.1s (max len 91) | device=NVIDIA GeForce RTX 4060 Laptop GPU amp=torch.bfloat16
+18:11:49   [ep  0.25] loss tr=0.5357/0.2127 val=0.2230 | f1 tr=0.0000 val=0.0000  *best*
+18:11:55   [ep  0.50] loss tr=0.1671/0.0985 val=0.1002 | f1 tr=0.6202 val=0.6494  *best*
+18:12:01   [ep  0.75] loss tr=0.0922/0.0655 val=0.0738 | f1 tr=0.7769 val=0.7630  *best*
+18:12:07   [ep  1.00] loss tr=0.0761/0.0506 val=0.0638 | f1 tr=0.8457 val=0.8158  *best*
+18:12:13   [ep  1.25] loss tr=0.0662/0.0429 val=0.0606 | f1 tr=0.8647 val=0.7722
+18:12:19   [ep  1.50] loss tr=0.0537/0.0346 val=0.0597 | f1 tr=0.8942 val=0.8308  *best*
+18:12:25   [ep  1.75] loss tr=0.0533/0.0300 val=0.0547 | f1 tr=0.9112 val=0.8374  *best*
+18:12:31   [ep  2.00] loss tr=0.0460/0.0272 val=0.0585 | f1 tr=0.9019 val=0.8200
+18:12:37   [ep  2.25] loss tr=0.0249/0.0185 val=0.0570 | f1 tr=0.9383 val=0.8565  *best*
+18:12:43   [ep  2.50] loss tr=0.0284/0.0156 val=0.0578 | f1 tr=0.9421 val=0.8608  *best*
+18:12:49   [ep  2.75] loss tr=0.0291/0.0145 val=0.0624 | f1 tr=0.9495 val=0.8354
+18:12:55   [ep  3.00] loss tr=0.0270/0.0102 val=0.0583 | f1 tr=0.9710 val=0.8571
+18:13:01   [ep  3.25] loss tr=0.0126/0.0085 val=0.0690 | f1 tr=0.9694 val=0.8589
+18:13:07   [ep  3.50] loss tr=0.0137/0.0049 val=0.0697 | f1 tr=0.9838 val=0.8552
+18:13:13   [ep  3.75] loss tr=0.0135/0.0041 val=0.0640 | f1 tr=0.9886 val=0.8756  *best*
+18:13:19   [ep  4.00] loss tr=0.0139/0.0035 val=0.0701 | f1 tr=0.9909 val=0.8511
+18:13:25   [ep  4.25] loss tr=0.0063/0.0019 val=0.0762 | f1 tr=0.9932 val=0.8490
+18:13:31   [ep  4.50] loss tr=0.0041/0.0031 val=0.0772 | f1 tr=0.9895 val=0.8313
+18:13:37   [ep  4.75] loss tr=0.0040/0.0016 val=0.0750 | f1 tr=0.9948 val=0.8499
+18:13:43   [ep  5.00] loss tr=0.0060/0.0013 val=0.0738 | f1 tr=0.9958 val=0.8547
+18:13:49   [ep  5.25] loss tr=0.0022/0.0008 val=0.0757 | f1 tr=0.9977 val=0.8694
+18:13:55   [ep  5.50] loss tr=0.0020/0.0007 val=0.0825 | f1 tr=0.9967 val=0.8681
+18:14:01   [ep  5.75] loss tr=0.0019/0.0005 val=0.0899 | f1 tr=0.9984 val=0.8675
+18:14:07   [ep  6.00] loss tr=0.0024/0.0003 val=0.0884 | f1 tr=0.9995 val=0.8609
+18:14:13   [ep  6.25] loss tr=0.0012/0.0002 val=0.0938 | f1 tr=0.9986 val=0.8565
+18:14:19   [ep  6.50] loss tr=0.0012/0.0001 val=0.0923 | f1 tr=0.9998 val=0.8701
+18:14:25   [ep  6.75] loss tr=0.0007/0.0001 val=0.0925 | f1 tr=0.9995 val=0.8703
+18:14:25   early stopping (no val improvement in 12 evals)
+18:14:26   done in 2.7 min - best val f1=0.8756 @ epoch 3.75
+18:14:26   TEST semeval->semeval: P=0.8583 R=0.8333 F1=0.8456
+18:14:27   TEST semeval->mams: P=0.7629 R=0.2552 F1=0.3825
+18:14:27 
+=== RoBERTa-base v2 ASC - train: SemEval-14 Laptop | epochs=5 lr=3e-05 bs=16
+18:14:28   encoded train=2092 val=221 in 0.0s (max len 97) | device=NVIDIA GeForce RTX 4060 Laptop GPU amp=torch.bfloat16
+18:14:33   [ep  0.25] loss tr=1.0646/1.0068 val=1.0113 | macro_f1 tr=0.4475 val=0.4505  *best*
+18:14:38   [ep  0.50] loss tr=0.8601/0.6182 val=0.6712 | macro_f1 tr=0.7273 val=0.7326  *best*
+18:14:43   [ep  0.75] loss tr=0.6820/0.4670 val=0.5663 | macro_f1 tr=0.7763 val=0.6981
+18:14:49   [ep  1.00] loss tr=0.6753/0.3829 val=0.5486 | macro_f1 tr=0.8317 val=0.7355  *best*
+18:14:54   [ep  1.25] loss tr=0.5664/0.3514 val=0.5314 | macro_f1 tr=0.8429 val=0.7343
+18:14:59   [ep  1.50] loss tr=0.5347/0.2607 val=0.5374 | macro_f1 tr=0.9045 val=0.7475  *best*
+18:15:04   [ep  1.75] loss tr=0.5268/0.2757 val=0.5309 | macro_f1 tr=0.9094 val=0.7467
+18:15:09   [ep  2.00] loss tr=0.5337/0.2196 val=0.5257 | macro_f1 tr=0.9300 val=0.7339
+18:15:14   [ep  2.25] loss tr=0.4214/0.1749 val=0.5990 | macro_f1 tr=0.9386 val=0.7340
+18:15:19   [ep  2.50] loss tr=0.4172/0.1613 val=0.6002 | macro_f1 tr=0.9504 val=0.7457
+18:15:25   [ep  2.75] loss tr=0.4349/0.1317 val=0.5613 | macro_f1 tr=0.9674 val=0.7476  *best*
+18:15:30   [ep  3.00] loss tr=0.4005/0.1069 val=0.5351 | macro_f1 tr=0.9761 val=0.7683  *best*
+18:15:35   [ep  3.25] loss tr=0.3368/0.1015 val=0.5775 | macro_f1 tr=0.9800 val=0.7510
+18:15:40   [ep  3.50] loss tr=0.3542/0.0933 val=0.5953 | macro_f1 tr=0.9815 val=0.7448
+18:15:45   [ep  3.75] loss tr=0.3615/0.0910 val=0.5641 | macro_f1 tr=0.9890 val=0.7508
+18:15:50   [ep  4.00] loss tr=0.3442/0.0802 val=0.5672 | macro_f1 tr=0.9891 val=0.7640
+18:15:55   [ep  4.25] loss tr=0.3289/0.0776 val=0.5505 | macro_f1 tr=0.9931 val=0.7602
+18:16:00   [ep  4.50] loss tr=0.3172/0.0694 val=0.5520 | macro_f1 tr=0.9944 val=0.7758  *best*
+18:16:06   [ep  4.75] loss tr=0.3347/0.0708 val=0.5740 | macro_f1 tr=0.9930 val=0.7568
+18:16:11   [ep  5.00] loss tr=0.3171/0.0671 val=0.5657 | macro_f1 tr=0.9948 val=0.7630
+18:16:11   done in 1.7 min - best val macro_f1=0.7758 @ epoch 4.504
+18:16:12   TEST semeval->semeval: acc=0.8197 macroF1=0.7790
+18:16:12   E2E  semeval->semeval: pair P=0.7124 R=0.6912 F1=0.7017
+18:16:13   TEST semeval->mams: acc=0.5831 macroF1=0.5739
+18:16:13   E2E  semeval->mams: pair P=0.5749 R=0.1924 F1=0.2883
+18:16:13 
+=== RoBERTa-large v2 ATE - train: SemEval-14 Laptop | epochs=6 lr=2e-05 bs=16
+18:16:15   encoded train=2741 val=304 in 0.1s (max len 91) | device=NVIDIA GeForce RTX 4060 Laptop GPU amp=torch.bfloat16
+18:16:36   [ep  0.25] loss tr=0.4940/0.1887 val=0.2017 | f1 tr=0.0019 val=0.0000  *best*
+18:16:56   [ep  0.50] loss tr=0.1492/0.0851 val=0.0958 | f1 tr=0.7072 val=0.6959  *best*
+18:17:15   [ep  0.75] loss tr=0.0872/0.0640 val=0.0864 | f1 tr=0.7989 val=0.7530  *best*
+18:17:35   [ep  1.00] loss tr=0.0749/0.0466 val=0.0701 | f1 tr=0.8456 val=0.8050  *best*
+18:17:54   [ep  1.25] loss tr=0.0620/0.0381 val=0.0648 | f1 tr=0.8861 val=0.8384  *best*
+18:18:15   [ep  1.50] loss tr=0.0445/0.0433 val=0.0778 | f1 tr=0.8803 val=0.8016
+18:18:35   [ep  1.75] loss tr=0.0457/0.0241 val=0.0564 | f1 tr=0.9280 val=0.8423  *best*
+18:18:55   [ep  2.00] loss tr=0.0435/0.0222 val=0.0634 | f1 tr=0.9172 val=0.8296
+18:19:14   [ep  2.25] loss tr=0.0247/0.0260 val=0.0785 | f1 tr=0.9095 val=0.8204
+18:19:34   [ep  2.50] loss tr=0.0277/0.0122 val=0.0660 | f1 tr=0.9584 val=0.8291
+18:19:54   [ep  2.75] loss tr=0.0264/0.0115 val=0.0701 | f1 tr=0.9594 val=0.8289
+18:20:14   [ep  3.00] loss tr=0.0267/0.0104 val=0.0673 | f1 tr=0.9679 val=0.8371
+18:20:34   [ep  3.25] loss tr=0.0114/0.0072 val=0.0790 | f1 tr=0.9767 val=0.8536  *best*
+18:20:54   [ep  3.50] loss tr=0.0091/0.0045 val=0.0776 | f1 tr=0.9867 val=0.8442
+18:21:13   [ep  3.75] loss tr=0.0133/0.0056 val=0.0826 | f1 tr=0.9824 val=0.8494
+18:21:33   [ep  4.00] loss tr=0.0111/0.0021 val=0.0782 | f1 tr=0.9948 val=0.8596  *best*
+18:21:52   [ep  4.25] loss tr=0.0058/0.0020 val=0.0764 | f1 tr=0.9951 val=0.8510
+18:22:12   [ep  4.50] loss tr=0.0048/0.0027 val=0.0907 | f1 tr=0.9914 val=0.8482
+18:22:31   [ep  4.75] loss tr=0.0070/0.0014 val=0.0795 | f1 tr=0.9972 val=0.8467
+18:22:52   [ep  5.00] loss tr=0.0063/0.0014 val=0.0829 | f1 tr=0.9972 val=0.8541
+18:23:11   [ep  5.25] loss tr=0.0015/0.0011 val=0.0858 | f1 tr=0.9977 val=0.8511
+18:23:31   [ep  5.50] loss tr=0.0034/0.0008 val=0.0849 | f1 tr=0.9986 val=0.8516
+18:23:52   [ep  5.75] loss tr=0.0029/0.0008 val=0.0866 | f1 tr=0.9988 val=0.8541
+18:24:11   [ep  6.00] loss tr=0.0030/0.0008 val=0.0867 | f1 tr=0.9986 val=0.8565
+18:24:12   done in 7.9 min - best val f1=0.8596 @ epoch 4.0
+18:24:13   TEST semeval->semeval: P=0.8814 R=0.8410 F1=0.8607
+18:24:14   TEST semeval->mams: P=0.8063 R=0.2493 F1=0.3808
+18:24:14 
+=== RoBERTa-large v2 ASC - train: SemEval-14 Laptop | epochs=4 lr=1.5e-05 bs=16
+18:24:16   encoded train=2092 val=221 in 0.1s (max len 97) | device=NVIDIA GeForce RTX 4060 Laptop GPU amp=torch.bfloat16
+18:24:34   [ep  0.25] loss tr=1.0821/1.0354 val=1.0365 | macro_f1 tr=0.2977 val=0.3127  *best*
+18:24:53   [ep  0.50] loss tr=0.8703/0.5596 val=0.6120 | macro_f1 tr=0.7443 val=0.7472  *best*
+18:25:11   [ep  0.75] loss tr=0.6647/0.4363 val=0.5222 | macro_f1 tr=0.7995 val=0.7323
+18:25:30   [ep  1.00] loss tr=0.7087/0.3652 val=0.4914 | macro_f1 tr=0.8504 val=0.7477  *best*
+18:25:48   [ep  1.25] loss tr=0.5392/0.3097 val=0.5019 | macro_f1 tr=0.8584 val=0.7558  *best*
+18:26:07   [ep  1.50] loss tr=0.5362/0.2451 val=0.4896 | macro_f1 tr=0.9086 val=0.7591  *best*
+18:26:25   [ep  1.75] loss tr=0.5259/0.2372 val=0.4610 | macro_f1 tr=0.9186 val=0.7910  *best*
+18:26:43   [ep  2.00] loss tr=0.5322/0.1985 val=0.4882 | macro_f1 tr=0.9138 val=0.7306
+18:27:01   [ep  2.25] loss tr=0.4097/0.1603 val=0.4755 | macro_f1 tr=0.9447 val=0.7550
+18:27:20   [ep  2.50] loss tr=0.4117/0.1397 val=0.5094 | macro_f1 tr=0.9612 val=0.7690
+18:27:38   [ep  2.75] loss tr=0.4200/0.1139 val=0.4955 | macro_f1 tr=0.9739 val=0.7811
+18:27:56   [ep  3.00] loss tr=0.4155/0.1085 val=0.4684 | macro_f1 tr=0.9795 val=0.7601
+18:28:14   [ep  3.25] loss tr=0.3514/0.1144 val=0.4881 | macro_f1 tr=0.9758 val=0.7660
+18:28:32   [ep  3.50] loss tr=0.3527/0.0948 val=0.4949 | macro_f1 tr=0.9829 val=0.7811
+18:28:51   [ep  3.75] loss tr=0.3527/0.0965 val=0.4709 | macro_f1 tr=0.9830 val=0.7532
+18:28:51   early stopping (no val improvement in 8 evals)
+18:28:52   done in 4.6 min - best val macro_f1=0.7910 @ epoch 1.748
+18:28:53   TEST semeval->semeval: acc=0.8323 macroF1=0.7988
+18:28:54   E2E  semeval->semeval: pair P=0.7270 R=0.6928 F1=0.7095
+18:28:57   TEST semeval->mams: acc=0.5561 macroF1=0.5416
+18:28:58   E2E  semeval->mams: pair P=0.6247 R=0.1931 F1=0.2950
+18:28:58 
+=== RoBERTa-base v2 ATE - train: MAMS | epochs=8 lr=5e-05 bs=16
+18:29:00   encoded train=4297 val=500 in 0.4s (max len 92) | device=NVIDIA GeForce RTX 4060 Laptop GPU amp=torch.bfloat16
+18:29:11   [ep  0.25] loss tr=0.5152/0.2147 val=0.2187 | f1 tr=0.5895 val=0.5958  *best*
+18:29:22   [ep  0.50] loss tr=0.1788/0.1512 val=0.1542 | f1 tr=0.7371 val=0.7367  *best*
+18:29:33   [ep  0.75] loss tr=0.1593/0.1376 val=0.1462 | f1 tr=0.7569 val=0.7469  *best*
+18:29:43   [ep  1.00] loss tr=0.1541/0.1260 val=0.1402 | f1 tr=0.7824 val=0.7617  *best*
+18:29:53   [ep  1.25] loss tr=0.1306/0.1224 val=0.1361 | f1 tr=0.7843 val=0.7598
+18:30:03   [ep  1.50] loss tr=0.1272/0.1098 val=0.1327 | f1 tr=0.8156 val=0.7762  *best*
+18:30:12   [ep  1.75] loss tr=0.1309/0.1069 val=0.1349 | f1 tr=0.8124 val=0.7768  *best*
+18:30:20   [ep  2.00] loss tr=0.1301/0.0979 val=0.1274 | f1 tr=0.8307 val=0.7791  *best*
+18:30:28   [ep  2.25] loss tr=0.1011/0.0883 val=0.1330 | f1 tr=0.8403 val=0.7706
+18:30:37   [ep  2.50] loss tr=0.1038/0.0824 val=0.1291 | f1 tr=0.8590 val=0.7798  *best*
+19:25:15 command: run_v2.py
+19:25:28 [baseline] ATE LR tagger trained on semeval (best C=10) in 11.7s
+19:25:31   ATE  TF-IDF+LR  semeval->semeval: P=0.6252 R=0.5382 F1=0.5785
+19:25:34   ATE  TF-IDF+LR  semeval->mams: P=0.5483 R=0.1190 F1=0.1956
+19:25:35 [baseline] ASC TF-IDF+LR trained on semeval (best C=1) in 0.7s
+19:25:35   ASC  TF-IDF+LR  semeval->semeval: acc=0.6708 macroF1=0.6067
+19:25:35   ASC  TF-IDF+LR  semeval->mams: acc=0.4476 macroF1=0.4465
+19:25:37 [baseline] ASC TF-IDF+SVM trained on semeval (best C=0.1) in 1.4s
+19:25:37   ASC  TF-IDF+SVM semeval->semeval: acc=0.6646 macroF1=0.5918
+19:25:37   ASC  TF-IDF+SVM semeval->mams: acc=0.4274 macroF1=0.4189
+19:26:03 [baseline] ATE LR tagger trained on mams (best C=3) in 25.7s
+19:26:06   ATE  TF-IDF+LR  mams->semeval: P=0.2398 R=0.0719 F1=0.1106
+19:26:09   ATE  TF-IDF+LR  mams->mams: P=0.6678 R=0.7058 F1=0.6863
+19:26:18 [baseline] ASC TF-IDF+LR trained on mams (best C=3) in 9.0s
+19:26:18   ASC  TF-IDF+LR  mams->semeval: acc=0.5925 macroF1=0.5234
+19:26:18   ASC  TF-IDF+LR  mams->mams: acc=0.7148 macroF1=0.7030
+19:26:20 [baseline] ASC TF-IDF+SVM trained on mams (best C=0.3) in 2.0s
+19:26:20   ASC  TF-IDF+SVM mams->semeval: acc=0.5784 macroF1=0.5112
+19:26:20   ASC  TF-IDF+SVM mams->mams: acc=0.7253 macroF1=0.7127
+19:26:24 [skip] ate/roberta/semeval already finished (use --fresh to retrain)
+19:26:24 [skip] asc/roberta/semeval already finished (use --fresh to retrain)
+19:26:24 [skip] ate/roberta-large/semeval already finished (use --fresh to retrain)
+19:26:24 [skip] asc/roberta-large/semeval already finished (use --fresh to retrain)
+19:26:24 
+=== RoBERTa-base v2 ATE - train: MAMS | epochs=8 lr=5e-05 bs=16
+19:26:27   encoded train=4297 val=500 in 0.4s (max len 92) | device=NVIDIA GeForce RTX 4060 Laptop GPU amp=torch.bfloat16
+19:26:39   [ep  0.25] loss tr=0.5152/0.2147 val=0.2187 | f1 tr=0.5895 val=0.5958  *best*
+19:26:49   [ep  0.50] loss tr=0.1788/0.1512 val=0.1542 | f1 tr=0.7371 val=0.7367  *best*
+19:26:59   [ep  0.75] loss tr=0.1593/0.1376 val=0.1462 | f1 tr=0.7569 val=0.7469  *best*
+19:27:09   [ep  1.00] loss tr=0.1541/0.1260 val=0.1402 | f1 tr=0.7824 val=0.7617  *best*
+19:27:18   [ep  1.25] loss tr=0.1306/0.1224 val=0.1361 | f1 tr=0.7843 val=0.7598
+19:27:28   [ep  1.50] loss tr=0.1272/0.1098 val=0.1327 | f1 tr=0.8156 val=0.7762  *best*
+19:27:39   [ep  1.75] loss tr=0.1309/0.1069 val=0.1349 | f1 tr=0.8124 val=0.7768  *best*
+19:27:49   [ep  2.00] loss tr=0.1301/0.0979 val=0.1274 | f1 tr=0.8307 val=0.7791  *best*
+19:27:59   [ep  2.25] loss tr=0.1011/0.0883 val=0.1330 | f1 tr=0.8403 val=0.7706
+19:28:08   [ep  2.50] loss tr=0.1038/0.0824 val=0.1291 | f1 tr=0.8590 val=0.7798  *best*
+19:28:19   [ep  2.75] loss tr=0.1032/0.0815 val=0.1290 | f1 tr=0.8646 val=0.7874  *best*
+19:28:29   [ep  3.00] loss tr=0.1055/0.0765 val=0.1325 | f1 tr=0.8742 val=0.7893  *best*
+19:28:39   [ep  3.25] loss tr=0.0836/0.0620 val=0.1385 | f1 tr=0.8928 val=0.7839
+19:28:49   [ep  3.50] loss tr=0.0816/0.0572 val=0.1392 | f1 tr=0.9064 val=0.7867
+19:28:59   [ep  3.75] loss tr=0.0758/0.0559 val=0.1356 | f1 tr=0.9065 val=0.7845
+19:29:09   [ep  4.00] loss tr=0.0800/0.0493 val=0.1353 | f1 tr=0.9209 val=0.7810
+19:29:18   [ep  4.25] loss tr=0.0618/0.0429 val=0.1532 | f1 tr=0.9241 val=0.7818
+19:29:28   [ep  4.50] loss tr=0.0610/0.0394 val=0.1560 | f1 tr=0.9338 val=0.7777
+19:29:38   [ep  4.75] loss tr=0.0582/0.0361 val=0.1704 | f1 tr=0.9408 val=0.7646
+19:29:48   [ep  5.00] loss tr=0.0566/0.0354 val=0.1545 | f1 tr=0.9388 val=0.7792
+19:29:58   [ep  5.25] loss tr=0.0441/0.0287 val=0.1692 | f1 tr=0.9490 val=0.7735
+19:30:10   [ep  5.50] loss tr=0.0476/0.0262 val=0.1800 | f1 tr=0.9554 val=0.7705
+19:30:20   [ep  5.75] loss tr=0.0480/0.0248 val=0.1662 | f1 tr=0.9615 val=0.7695
+19:30:30   [ep  6.00] loss tr=0.0445/0.0219 val=0.1726 | f1 tr=0.9666 val=0.7730
+19:30:30   early stopping (no val improvement in 12 evals)
+19:30:30   done in 4.1 min - best val f1=0.7893 @ epoch 3.0
+19:30:31   TEST mams->semeval: P=0.3568 R=0.4954 F1=0.4149
+19:30:31   TEST mams->mams: P=0.7299 R=0.8376 F1=0.7801
+19:30:31 
+=== RoBERTa-base v2 ASC - train: MAMS | epochs=5 lr=3e-05 bs=16
+19:30:33   encoded train=11186 val=1332 in 0.8s (max len 101) | device=NVIDIA GeForce RTX 4060 Laptop GPU amp=torch.bfloat16
+19:35:57 command: run_v2.py
+19:36:11 [baseline] ATE LR tagger trained on semeval (best C=10) in 12.2s
+19:36:14   ATE  TF-IDF+LR  semeval->semeval: P=0.6252 R=0.5382 F1=0.5785
+19:36:17   ATE  TF-IDF+LR  semeval->mams: P=0.5483 R=0.1190 F1=0.1956
+19:36:18 [baseline] ASC TF-IDF+LR trained on semeval (best C=1) in 0.7s
+19:36:18   ASC  TF-IDF+LR  semeval->semeval: acc=0.6708 macroF1=0.6067
+19:36:18   ASC  TF-IDF+LR  semeval->mams: acc=0.4476 macroF1=0.4465
+19:36:20 [baseline] ASC TF-IDF+SVM trained on semeval (best C=0.1) in 1.4s
+19:36:20   ASC  TF-IDF+SVM semeval->semeval: acc=0.6646 macroF1=0.5918
+19:36:20   ASC  TF-IDF+SVM semeval->mams: acc=0.4274 macroF1=0.4189
+19:36:47 [baseline] ATE LR tagger trained on mams (best C=3) in 27.3s
+19:36:51   ATE  TF-IDF+LR  mams->semeval: P=0.2398 R=0.0719 F1=0.1106
+19:36:54   ATE  TF-IDF+LR  mams->mams: P=0.6678 R=0.7058 F1=0.6863
+19:37:06 [baseline] ASC TF-IDF+LR trained on mams (best C=3) in 12.1s
+19:37:06   ASC  TF-IDF+LR  mams->semeval: acc=0.5925 macroF1=0.5234
+19:37:06   ASC  TF-IDF+LR  mams->mams: acc=0.7148 macroF1=0.7030
+19:37:10 [baseline] ASC TF-IDF+SVM trained on mams (best C=0.3) in 3.6s
+19:37:10   ASC  TF-IDF+SVM mams->semeval: acc=0.5784 macroF1=0.5112
+19:37:10   ASC  TF-IDF+SVM mams->mams: acc=0.7253 macroF1=0.7127
+19:37:14 [skip] ate/roberta/semeval already finished (use --fresh to retrain)
+19:37:14 [skip] asc/roberta/semeval already finished (use --fresh to retrain)
+19:37:14 [skip] ate/roberta-large/semeval already finished (use --fresh to retrain)
+19:37:14 [skip] asc/roberta-large/semeval already finished (use --fresh to retrain)
+19:37:14 [skip] ate/roberta/mams already finished (use --fresh to retrain)
+19:37:14 
+=== RoBERTa-base v2 ASC - train: MAMS | epochs=5 lr=3e-05 bs=16
+19:37:18   encoded train=11186 val=1332 in 0.8s (max len 101) | device=NVIDIA GeForce RTX 4060 Laptop GPU amp=torch.bfloat16
+19:37:44   [ep  0.25] loss tr=0.9500/0.5909 val=0.5842 | macro_f1 tr=0.7639 val=0.7637  *best*
+19:38:09   [ep  0.50] loss tr=0.6836/0.5102 val=0.5475 | macro_f1 tr=0.7906 val=0.7643  *best*
+19:38:34   [ep  0.75] loss tr=0.6468/0.4343 val=0.5103 | macro_f1 tr=0.8368 val=0.8007  *best*
+19:38:59   [ep  1.00] loss tr=0.6068/0.3632 val=0.4716 | macro_f1 tr=0.8705 val=0.8142  *best*
+19:39:25   [ep  1.25] loss tr=0.5456/0.3141 val=0.4647 | macro_f1 tr=0.8954 val=0.8169  *best*
+19:39:50   [ep  1.50] loss tr=0.5401/0.2860 val=0.4467 | macro_f1 tr=0.9104 val=0.8322  *best*
+19:40:14   [ep  1.75] loss tr=0.5263/0.2760 val=0.4712 | macro_f1 tr=0.9172 val=0.8144
+19:40:39   [ep  2.00] loss tr=0.5401/0.2438 val=0.4588 | macro_f1 tr=0.9294 val=0.8237
+19:41:05   [ep  2.25] loss tr=0.4436/0.2064 val=0.4484 | macro_f1 tr=0.9422 val=0.8304
+19:41:30   [ep  2.50] loss tr=0.4457/0.2018 val=0.4711 | macro_f1 tr=0.9438 val=0.8236
+19:41:55   [ep  2.75] loss tr=0.4561/0.1659 val=0.4503 | macro_f1 tr=0.9617 val=0.8256
+19:42:21   [ep  3.00] loss tr=0.4389/0.1616 val=0.4513 | macro_f1 tr=0.9602 val=0.8312
+19:42:46   [ep  3.25] loss tr=0.3857/0.1407 val=0.4687 | macro_f1 tr=0.9672 val=0.8289
+19:43:11   [ep  3.50] loss tr=0.3916/0.1323 val=0.4715 | macro_f1 tr=0.9708 val=0.8320
+19:43:11   early stopping (no val improvement in 8 evals)
+19:43:11   done in 5.9 min - best val macro_f1=0.8322 @ epoch 1.5
+19:43:12   TEST mams->semeval: acc=0.7273 macroF1=0.6911
+19:43:12   E2E  mams->semeval: pair P=0.2637 R=0.3699 F1=0.3079
+19:43:13   TEST mams->mams: acc=0.8503 macroF1=0.8449
+19:43:14   E2E  mams->mams: pair P=0.6282 R=0.7208 F1=0.6713
+19:43:14 
+=== RoBERTa-large v2 ATE - train: MAMS | epochs=6 lr=2e-05 bs=16
+19:43:18   encoded train=4297 val=500 in 0.4s (max len 92) | device=NVIDIA GeForce RTX 4060 Laptop GPU amp=torch.bfloat16
+19:43:53   [ep  0.25] loss tr=0.4967/0.2152 val=0.2226 | f1 tr=0.5919 val=0.5945  *best*
+19:44:27   [ep  0.50] loss tr=0.1838/0.1586 val=0.1591 | f1 tr=0.7372 val=0.7394  *best*
+19:45:01   [ep  0.75] loss tr=0.1655/0.1424 val=0.1489 | f1 tr=0.7565 val=0.7536  *best*
+19:45:35   [ep  1.00] loss tr=0.1595/0.1304 val=0.1450 | f1 tr=0.7727 val=0.7525
+19:46:10   [ep  1.25] loss tr=0.1349/0.1198 val=0.1364 | f1 tr=0.7963 val=0.7705  *best*
+19:46:44   [ep  1.50] loss tr=0.1355/0.1171 val=0.1394 | f1 tr=0.8061 val=0.7723  *best*
+19:47:18   [ep  1.75] loss tr=0.1401/0.1096 val=0.1403 | f1 tr=0.8119 val=0.7739  *best*
+19:47:52   [ep  2.00] loss tr=0.1367/0.1030 val=0.1320 | f1 tr=0.8240 val=0.7740  *best*
+19:48:26   [ep  2.25] loss tr=0.1086/0.0932 val=0.1350 | f1 tr=0.8321 val=0.7662
+19:48:59   [ep  2.50] loss tr=0.1070/0.0897 val=0.1371 | f1 tr=0.8409 val=0.7717
+19:49:33   [ep  2.75] loss tr=0.1087/0.0850 val=0.1327 | f1 tr=0.8596 val=0.7743  *best*
+19:50:08   [ep  3.00] loss tr=0.1104/0.0811 val=0.1368 | f1 tr=0.8619 val=0.7789  *best*
+19:50:42   [ep  3.25] loss tr=0.0910/0.0681 val=0.1447 | f1 tr=0.8814 val=0.7735
+19:51:15   [ep  3.50] loss tr=0.0888/0.0635 val=0.1397 | f1 tr=0.8971 val=0.7785
+19:51:49   [ep  3.75] loss tr=0.0804/0.0615 val=0.1423 | f1 tr=0.8959 val=0.7719
+19:52:23   [ep  4.00] loss tr=0.0865/0.0556 val=0.1412 | f1 tr=0.9093 val=0.7736
+19:52:57   [ep  4.25] loss tr=0.0721/0.0504 val=0.1512 | f1 tr=0.9142 val=0.7731
+19:53:28   [ep  4.50] loss tr=0.0707/0.0465 val=0.1532 | f1 tr=0.9231 val=0.7689
+19:53:56 command: run_v2.py --report-only
+19:53:57   [ep  4.75] loss tr=0.0674/0.0441 val=0.1566 | f1 tr=0.9287 val=0.7718
+19:54:10 command: run_v2.py --report-only
+19:54:21 [baseline] ATE LR tagger trained on semeval (best C=10) in 10.7s
+19:54:25   ATE  TF-IDF+LR  semeval->semeval: P=0.6252 R=0.5382 F1=0.5785
+19:54:28   ATE  TF-IDF+LR  semeval->mams: P=0.5483 R=0.1190 F1=0.1956
+19:54:28 [baseline] ASC TF-IDF+LR trained on semeval (best C=1) in 0.6s
+19:54:28   ASC  TF-IDF+LR  semeval->semeval: acc=0.6708 macroF1=0.6067
+19:54:28   ASC  TF-IDF+LR  semeval->mams: acc=0.4476 macroF1=0.4465
+19:54:30 [baseline] ASC TF-IDF+SVM trained on semeval (best C=0.1) in 1.4s
+19:54:30   ASC  TF-IDF+SVM semeval->semeval: acc=0.6646 macroF1=0.5918
+19:54:30   ASC  TF-IDF+SVM semeval->mams: acc=0.4274 macroF1=0.4189
+19:54:52 [baseline] ATE LR tagger trained on mams (best C=3) in 21.8s
+19:54:55   ATE  TF-IDF+LR  mams->semeval: P=0.2398 R=0.0719 F1=0.1106
+19:54:58   ATE  TF-IDF+LR  mams->mams: P=0.6678 R=0.7058 F1=0.6863
+19:55:06 [baseline] ASC TF-IDF+LR trained on mams (best C=3) in 7.9s
+19:55:06   ASC  TF-IDF+LR  mams->semeval: acc=0.5925 macroF1=0.5234
+19:55:06   ASC  TF-IDF+LR  mams->mams: acc=0.7148 macroF1=0.7030
+19:55:08 [baseline] ASC TF-IDF+SVM trained on mams (best C=0.3) in 2.0s
+19:55:08   ASC  TF-IDF+SVM mams->semeval: acc=0.5784 macroF1=0.5112
+19:55:08   ASC  TF-IDF+SVM mams->mams: acc=0.7253 macroF1=0.7127
+19:55:11 [skip] ate/roberta/semeval already finished (use --fresh to retrain)
+19:55:11 [skip] asc/roberta/semeval already finished (use --fresh to retrain)
+19:55:11 [skip] ate/roberta-large/semeval already finished (use --fresh to retrain)
+19:55:11 [skip] asc/roberta-large/semeval already finished (use --fresh to retrain)
+19:55:11 [skip] ate/roberta/mams already finished (use --fresh to retrain)
+19:55:11 [skip] asc/roberta/mams already finished (use --fresh to retrain)
+19:55:11 [report-only] skipping unfinished roberta-large-v2/mams
+19:55:34 command: run_v2.py
+19:55:45 [baseline] ATE LR tagger trained on semeval (best C=10) in 10.1s
+19:55:48   ATE  TF-IDF+LR  semeval->semeval: P=0.6252 R=0.5382 F1=0.5785
+19:55:50   ATE  TF-IDF+LR  semeval->mams: P=0.5483 R=0.1190 F1=0.1956
+19:55:51 [baseline] ASC TF-IDF+LR trained on semeval (best C=1) in 0.6s
+19:55:51   ASC  TF-IDF+LR  semeval->semeval: acc=0.6708 macroF1=0.6067
+19:55:51   ASC  TF-IDF+LR  semeval->mams: acc=0.4476 macroF1=0.4465
+19:55:53 [baseline] ASC TF-IDF+SVM trained on semeval (best C=0.1) in 1.3s
+19:55:53   ASC  TF-IDF+SVM semeval->semeval: acc=0.6646 macroF1=0.5918
+19:55:53   ASC  TF-IDF+SVM semeval->mams: acc=0.4274 macroF1=0.4189
+19:56:14 [baseline] ATE LR tagger trained on mams (best C=3) in 21.1s
+19:56:17   ATE  TF-IDF+LR  mams->semeval: P=0.2398 R=0.0719 F1=0.1106
+19:56:20   ATE  TF-IDF+LR  mams->mams: P=0.6678 R=0.7058 F1=0.6863
+19:56:28 [baseline] ASC TF-IDF+LR trained on mams (best C=3) in 8.4s
+19:56:28   ASC  TF-IDF+LR  mams->semeval: acc=0.5925 macroF1=0.5234
+19:56:28   ASC  TF-IDF+LR  mams->mams: acc=0.7148 macroF1=0.7030
+19:56:30 [baseline] ASC TF-IDF+SVM trained on mams (best C=0.3) in 2.1s
+19:56:31   ASC  TF-IDF+SVM mams->semeval: acc=0.5784 macroF1=0.5112
+19:56:31   ASC  TF-IDF+SVM mams->mams: acc=0.7253 macroF1=0.7127
+19:56:33 [skip] ate/roberta/semeval already finished (use --fresh to retrain)
+19:56:33 [skip] asc/roberta/semeval already finished (use --fresh to retrain)
+19:56:33 [skip] ate/roberta-large/semeval already finished (use --fresh to retrain)
+19:56:33 [skip] asc/roberta-large/semeval already finished (use --fresh to retrain)
+19:56:33 [skip] ate/roberta/mams already finished (use --fresh to retrain)
+19:56:33 [skip] asc/roberta/mams already finished (use --fresh to retrain)
+19:56:33 
+=== RoBERTa-large v2 ATE - train: MAMS | epochs=6 lr=2e-05 bs=16
+19:56:37   encoded train=4297 val=500 in 0.5s (max len 92) | device=NVIDIA GeForce RTX 4060 Laptop GPU amp=torch.bfloat16
+19:57:08   [ep  0.25] loss tr=0.4967/0.2152 val=0.2226 | f1 tr=0.5919 val=0.5945  *best*
+19:57:37   [ep  0.50] loss tr=0.1838/0.1586 val=0.1591 | f1 tr=0.7372 val=0.7394  *best*
+19:58:07   [ep  0.75] loss tr=0.1655/0.1424 val=0.1489 | f1 tr=0.7565 val=0.7536  *best*
+19:58:35   [ep  1.00] loss tr=0.1595/0.1304 val=0.1450 | f1 tr=0.7727 val=0.7525
+19:59:03   [ep  1.25] loss tr=0.1349/0.1198 val=0.1364 | f1 tr=0.7963 val=0.7705  *best*
+19:59:31   [ep  1.50] loss tr=0.1355/0.1171 val=0.1394 | f1 tr=0.8061 val=0.7723  *best*
+20:00:00   [ep  1.75] loss tr=0.1401/0.1096 val=0.1403 | f1 tr=0.8119 val=0.7739  *best*
+20:00:29   [ep  2.00] loss tr=0.1367/0.1030 val=0.1320 | f1 tr=0.8240 val=0.7740  *best*
+20:00:57   [ep  2.25] loss tr=0.1086/0.0932 val=0.1350 | f1 tr=0.8321 val=0.7662
+20:01:25   [ep  2.50] loss tr=0.1070/0.0897 val=0.1371 | f1 tr=0.8409 val=0.7717
+20:01:53   [ep  2.75] loss tr=0.1087/0.0850 val=0.1327 | f1 tr=0.8596 val=0.7743  *best*
+20:02:22   [ep  3.00] loss tr=0.1104/0.0811 val=0.1368 | f1 tr=0.8619 val=0.7789  *best*
+20:02:51   [ep  3.25] loss tr=0.0910/0.0681 val=0.1447 | f1 tr=0.8814 val=0.7735
+20:03:19   [ep  3.50] loss tr=0.0888/0.0635 val=0.1397 | f1 tr=0.8971 val=0.7785
+20:03:47   [ep  3.75] loss tr=0.0804/0.0615 val=0.1423 | f1 tr=0.8959 val=0.7719
+20:04:16   [ep  4.00] loss tr=0.0865/0.0556 val=0.1412 | f1 tr=0.9093 val=0.7736
+20:04:44   [ep  4.25] loss tr=0.0721/0.0504 val=0.1512 | f1 tr=0.9142 val=0.7731
+20:05:13   [ep  4.50] loss tr=0.0707/0.0465 val=0.1532 | f1 tr=0.9231 val=0.7689
+20:05:41   [ep  4.75] loss tr=0.0674/0.0441 val=0.1566 | f1 tr=0.9287 val=0.7718
+20:06:10   [ep  5.00] loss tr=0.0645/0.0430 val=0.1552 | f1 tr=0.9296 val=0.7802  *best*
+20:06:38   [ep  5.25] loss tr=0.0538/0.0375 val=0.1661 | f1 tr=0.9339 val=0.7668
+20:07:07   [ep  5.50] loss tr=0.0587/0.0374 val=0.1629 | f1 tr=0.9370 val=0.7789
+20:07:35   [ep  5.75] loss tr=0.0585/0.0357 val=0.1652 | f1 tr=0.9398 val=0.7753
+20:08:03   [ep  6.00] loss tr=0.0538/0.0348 val=0.1660 | f1 tr=0.9411 val=0.7721
+20:08:04   done in 11.4 min - best val f1=0.7802 @ epoch 5.0
+20:08:05   TEST mams->semeval: P=0.4228 R=0.3853 F1=0.4032
+20:08:05   TEST mams->mams: P=0.7345 R=0.8054 F1=0.7683
+20:08:05 
+=== RoBERTa-large v2 ASC - train: MAMS | epochs=4 lr=1.5e-05 bs=16
+20:08:09   encoded train=11186 val=1332 in 0.7s (max len 101) | device=NVIDIA GeForce RTX 4060 Laptop GPU amp=torch.bfloat16
+20:09:24   [ep  0.25] loss tr=0.9579/0.5667 val=0.5784 | macro_f1 tr=0.7638 val=0.7544  *best*
+20:10:38   [ep  0.50] loss tr=0.6821/0.4827 val=0.5374 | macro_f1 tr=0.8180 val=0.7914  *best*
+20:11:54   [ep  0.75] loss tr=0.6430/0.3886 val=0.4795 | macro_f1 tr=0.8601 val=0.8163  *best*
+20:13:09   [ep  1.00] loss tr=0.6025/0.3340 val=0.4748 | macro_f1 tr=0.8849 val=0.8187  *best*
+20:14:25   [ep  1.25] loss tr=0.5351/0.2944 val=0.4568 | macro_f1 tr=0.9022 val=0.8146
+20:15:40   [ep  1.50] loss tr=0.5323/0.2778 val=0.4532 | macro_f1 tr=0.9150 val=0.8250  *best*
+20:16:54   [ep  1.75] loss tr=0.5106/0.2604 val=0.4856 | macro_f1 tr=0.9197 val=0.8110
+20:18:08   [ep  2.00] loss tr=0.5305/0.2327 val=0.4754 | macro_f1 tr=0.9280 val=0.8150
+20:19:23   [ep  2.25] loss tr=0.4311/0.1985 val=0.4584 | macro_f1 tr=0.9416 val=0.8271  *best*
+20:20:38   [ep  2.50] loss tr=0.4432/0.1852 val=0.4684 | macro_f1 tr=0.9462 val=0.8169
+20:21:53   [ep  2.75] loss tr=0.4470/0.1579 val=0.4477 | macro_f1 tr=0.9602 val=0.8315  *best*
+20:23:08   [ep  3.00] loss tr=0.4302/0.1506 val=0.4715 | macro_f1 tr=0.9623 val=0.8235
+20:24:23   [ep  3.25] loss tr=0.3798/0.1457 val=0.4997 | macro_f1 tr=0.9642 val=0.8230
+20:25:37   [ep  3.50] loss tr=0.3899/0.1377 val=0.4857 | macro_f1 tr=0.9669 val=0.8262
+20:26:53   [ep  3.75] loss tr=0.3799/0.1298 val=0.4856 | macro_f1 tr=0.9697 val=0.8314
+20:28:07   [ep  4.00] loss tr=0.3921/0.1277 val=0.4821 | macro_f1 tr=0.9705 val=0.8281
+20:28:08   done in 20.0 min - best val macro_f1=0.8315 @ epoch 2.75
+20:28:09   TEST mams->semeval: acc=0.7618 macroF1=0.7321
+20:28:09   E2E  mams->semeval: pair P=0.3408 R=0.3119 F1=0.3257
+20:28:12   TEST mams->mams: acc=0.8563 macroF1=0.8506
+20:28:14   E2E  mams->mams: pair P=0.6328 R=0.6939 F1=0.6619
+20:28:28 
+
+## Aspect-level sentiment classification (test sets)
+
+| model | train | test | setting | accuracy | macro_precision | macro_recall | macro_f1 |
+|---|---|---|---|---|---|---|---|
+| BERT-base v1 | mams | mams | in-domain | 0.8368 | 0.8297 | 0.8360 | 0.8326 |
+| RoBERTa-base v1 | mams | mams | in-domain | 0.8451 | 0.8400 | 0.8416 | 0.8403 |
+| RoBERTa-base v2 | mams | mams | in-domain | 0.8503 | 0.8448 | 0.8451 | 0.8449 |
+| RoBERTa-large v2 | mams | mams | in-domain | 0.8563 | 0.8517 | 0.8496 | 0.8506 |
+| TF-IDF+LR | mams | mams | in-domain | 0.7148 | 0.7035 | 0.7025 | 0.7030 |
+| TF-IDF+SVM | mams | mams | in-domain | 0.7253 | 0.7160 | 0.7100 | 0.7127 |
+| BERT-base v1 | mams | semeval | cross-dataset | 0.6991 | 0.6837 | 0.6937 | 0.6769 |
+| RoBERTa-base v1 | mams | semeval | cross-dataset | 0.7539 | 0.7238 | 0.7273 | 0.7208 |
+| RoBERTa-base v2 | mams | semeval | cross-dataset | 0.7273 | 0.7003 | 0.6979 | 0.6911 |
+| RoBERTa-large v2 | mams | semeval | cross-dataset | 0.7618 | 0.7453 | 0.7409 | 0.7321 |
+| TF-IDF+LR | mams | semeval | cross-dataset | 0.5925 | 0.5503 | 0.5303 | 0.5234 |
+| TF-IDF+SVM | mams | semeval | cross-dataset | 0.5784 | 0.5350 | 0.5198 | 0.5112 |
+| BERT-base v1 | semeval | mams | cross-dataset | 0.5165 | 0.5205 | 0.5466 | 0.5180 |
+| RoBERTa-base v1 | semeval | mams | cross-dataset | 0.4873 | 0.5135 | 0.5479 | 0.4824 |
+| RoBERTa-base v2 | semeval | mams | cross-dataset | 0.5831 | 0.6365 | 0.6522 | 0.5739 |
+| RoBERTa-large v2 | semeval | mams | cross-dataset | 0.5561 | 0.6028 | 0.6374 | 0.5416 |
+| TF-IDF+LR | semeval | mams | cross-dataset | 0.4476 | 0.4923 | 0.4965 | 0.4465 |
+| TF-IDF+SVM | semeval | mams | cross-dataset | 0.4274 | 0.4875 | 0.4871 | 0.4189 |
+| BERT-base v1 | semeval | semeval | in-domain | 0.7759 | 0.7362 | 0.7481 | 0.7321 |
+| RoBERTa-base v1 | semeval | semeval | in-domain | 0.8041 | 0.7660 | 0.7951 | 0.7748 |
+| RoBERTa-base v2 | semeval | semeval | in-domain | 0.8197 | 0.7871 | 0.7960 | 0.7790 |
+| RoBERTa-large v2 | semeval | semeval | in-domain | 0.8323 | 0.7971 | 0.8165 | 0.7988 |
+| TF-IDF+LR | semeval | semeval | in-domain | 0.6708 | 0.6171 | 0.6123 | 0.6067 |
+| TF-IDF+SVM | semeval | semeval | in-domain | 0.6646 | 0.6178 | 0.6058 | 0.5918 |
+
+## Aspect term extraction (exact-match spans, test sets)
+
+| model | train | test | setting | precision | recall | f1 |
+|---|---|---|---|---|---|---|
+| BERT-base v1 | mams | mams | in-domain | 0.7177 | 0.7859 | 0.7503 |
+| RoBERTa-base v1 | mams | mams | in-domain | 0.7415 | 0.7837 | 0.7620 |
+| RoBERTa-base v2 | mams | mams | in-domain | 0.7299 | 0.8376 | 0.7801 |
+| RoBERTa-large v2 | mams | mams | in-domain | 0.7345 | 0.8054 | 0.7683 |
+| TF-IDF+LR | mams | mams | in-domain | 0.6678 | 0.7058 | 0.6863 |
+| BERT-base v1 | mams | semeval | cross-dataset | 0.2850 | 0.3547 | 0.3161 |
+| RoBERTa-base v1 | mams | semeval | cross-dataset | 0.3337 | 0.4832 | 0.3948 |
+| RoBERTa-base v2 | mams | semeval | cross-dataset | 0.3568 | 0.4954 | 0.4149 |
+| RoBERTa-large v2 | mams | semeval | cross-dataset | 0.4228 | 0.3853 | 0.4032 |
+| TF-IDF+LR | mams | semeval | cross-dataset | 0.2398 | 0.0719 | 0.1106 |
+| BERT-base v1 | semeval | mams | cross-dataset | 0.7239 | 0.1452 | 0.2419 |
+| RoBERTa-base v1 | semeval | mams | cross-dataset | 0.7606 | 0.3091 | 0.4396 |
+| RoBERTa-base v2 | semeval | mams | cross-dataset | 0.7629 | 0.2552 | 0.3825 |
+| RoBERTa-large v2 | semeval | mams | cross-dataset | 0.8063 | 0.2493 | 0.3808 |
+| TF-IDF+LR | semeval | mams | cross-dataset | 0.5483 | 0.1190 | 0.1956 |
+| BERT-base v1 | semeval | semeval | in-domain | 0.8054 | 0.8226 | 0.8139 |
+| RoBERTa-base v1 | semeval | semeval | in-domain | 0.8651 | 0.8532 | 0.8591 |
+| RoBERTa-base v2 | semeval | semeval | in-domain | 0.8583 | 0.8333 | 0.8456 |
+| RoBERTa-large v2 | semeval | semeval | in-domain | 0.8814 | 0.8410 | 0.8607 |
+| TF-IDF+LR | semeval | semeval | in-domain | 0.6252 | 0.5382 | 0.5785 |
+
+## End-to-end ATE -> ASC (aspect-polarity pair F1)
+
+| model | train | test | setting | precision | recall | f1 |
+|---|---|---|---|---|---|---|
+| BERT-base v1 | mams | mams | in-domain | 0.6145 | 0.6729 | 0.6424 |
+| RoBERTa-base v1 | mams | mams | in-domain | 0.6374 | 0.6737 | 0.6550 |
+| RoBERTa-base v2 | mams | mams | in-domain | 0.6282 | 0.7208 | 0.6713 |
+| RoBERTa-large v2 | mams | mams | in-domain | 0.6328 | 0.6939 | 0.6619 |
+| TF-IDF+LR | mams | mams | in-domain | 0.5071 | 0.5359 | 0.5211 |
+| TF-IDF+SVM | mams | mams | in-domain | 0.5149 | 0.5442 | 0.5291 |
+| BERT-base v1 | mams | semeval | cross-dataset | 0.2207 | 0.2774 | 0.2458 |
+| RoBERTa-base v1 | mams | semeval | cross-dataset | 0.2511 | 0.3683 | 0.2986 |
+| RoBERTa-base v2 | mams | semeval | cross-dataset | 0.2637 | 0.3699 | 0.3079 |
+| RoBERTa-large v2 | mams | semeval | cross-dataset | 0.3408 | 0.3119 | 0.3257 |
+| TF-IDF+LR | mams | semeval | cross-dataset | 0.1414 | 0.0423 | 0.0651 |
+| TF-IDF+SVM | mams | semeval | cross-dataset | 0.1414 | 0.0423 | 0.0651 |
+| BERT-base v1 | semeval | mams | cross-dataset | 0.4254 | 0.0853 | 0.1421 |
+| RoBERTa-base v1 | semeval | mams | cross-dataset | 0.4770 | 0.1939 | 0.2757 |
+| RoBERTa-base v2 | semeval | mams | cross-dataset | 0.5749 | 0.1924 | 0.2883 |
+| RoBERTa-large v2 | semeval | mams | cross-dataset | 0.6247 | 0.1931 | 0.2950 |
+| TF-IDF+LR | semeval | mams | cross-dataset | 0.3034 | 0.0659 | 0.1082 |
+| TF-IDF+SVM | semeval | mams | cross-dataset | 0.2828 | 0.0614 | 0.1009 |
+| BERT-base v1 | semeval | semeval | in-domain | 0.6279 | 0.6426 | 0.6352 |
+| RoBERTa-base v1 | semeval | semeval | in-domain | 0.6963 | 0.6865 | 0.6914 |
+| RoBERTa-base v2 | semeval | semeval | in-domain | 0.7124 | 0.6912 | 0.7017 |
+| RoBERTa-large v2 | semeval | semeval | in-domain | 0.7270 | 0.6928 | 0.7095 |
+| TF-IDF+LR | semeval | semeval | in-domain | 0.4465 | 0.3856 | 0.4138 |
+| TF-IDF+SVM | semeval | semeval | in-domain | 0.4374 | 0.3777 | 0.4054 |
+
+## ASC accuracy by linguistic phenomenon
+
+| model | train | test | all | negation | contrast | multi_aspect | multi_polarity | implicit | long_range |
+|---|---|---|---|---|---|---|---|---|---|
+| TF-IDF+LR | semeval | semeval | 0.6708 | 0.5175 | 0.5190 | 0.6623 | 0.4854 | 0.5634 | 0.6268 |
+| TF-IDF+LR | semeval | mams | 0.4476 | 0.4568 | 0.4179 | 0.4476 | 0.4476 | 0.4505 | 0.3849 |
+| TF-IDF+SVM | semeval | semeval | 0.6646 | 0.5385 | 0.5316 | 0.6649 | 0.4563 | 0.5352 | 0.6056 |
+| TF-IDF+SVM | semeval | mams | 0.4274 | 0.4273 | 0.4034 | 0.4274 | 0.4274 | 0.4359 | 0.3401 |
+| TF-IDF+LR | mams | semeval | 0.5925 | 0.4336 | 0.5190 | 0.5831 | 0.5243 | 0.5563 | 0.5141 |
+| TF-IDF+LR | mams | mams | 0.7148 | 0.6750 | 0.6932 | 0.7148 | 0.7148 | 0.7839 | 0.7149 |
+| TF-IDF+SVM | mams | semeval | 0.5784 | 0.4126 | 0.4810 | 0.5567 | 0.4951 | 0.5423 | 0.4859 |
+| TF-IDF+SVM | mams | mams | 0.7253 | 0.6886 | 0.7005 | 0.7253 | 0.7253 | 0.7802 | 0.7210 |
+| BERT-base v1 | mams | semeval | 0.6991 | 0.5944 | 0.6329 | 0.6913 | 0.6796 | 0.6197 | 0.6338 |
+| BERT-base v1 | mams | mams | 0.8368 | 0.8136 | 0.8382 | 0.8368 | 0.8368 | 0.8718 | 0.8289 |
+| BERT-base v1 | semeval | semeval | 0.7759 | 0.6713 | 0.6835 | 0.7652 | 0.5243 | 0.6831 | 0.6972 |
+| BERT-base v1 | semeval | mams | 0.5165 | 0.4955 | 0.5000 | 0.5165 | 0.5165 | 0.4835 | 0.4705 |
+| RoBERTa-base v1 | mams | semeval | 0.7539 | 0.6993 | 0.6962 | 0.7625 | 0.7767 | 0.6620 | 0.6690 |
+| RoBERTa-base v1 | mams | mams | 0.8451 | 0.8227 | 0.8406 | 0.8451 | 0.8451 | 0.8571 | 0.8473 |
+| RoBERTa-base v1 | semeval | semeval | 0.8041 | 0.6993 | 0.6329 | 0.7968 | 0.5728 | 0.7465 | 0.7606 |
+| RoBERTa-base v1 | semeval | mams | 0.4873 | 0.4659 | 0.4300 | 0.4873 | 0.4873 | 0.4872 | 0.3890 |
+| RoBERTa-base v2 | semeval | semeval | 0.8197 | 0.7413 | 0.7342 | 0.8179 | 0.7184 | 0.7535 | 0.7183 |
+| RoBERTa-base v2 | semeval | mams | 0.5831 | 0.5773 | 0.6232 | 0.5831 | 0.5831 | 0.5275 | 0.4929 |
+| RoBERTa-large v2 | semeval | semeval | 0.8323 | 0.7133 | 0.7848 | 0.8391 | 0.7379 | 0.7817 | 0.7887 |
+| RoBERTa-large v2 | semeval | mams | 0.5561 | 0.5432 | 0.5894 | 0.5561 | 0.5561 | 0.4652 | 0.4603 |
+| RoBERTa-base v2 | mams | semeval | 0.7273 | 0.6643 | 0.6582 | 0.7388 | 0.7573 | 0.6338 | 0.6831 |
+| RoBERTa-base v2 | mams | mams | 0.8503 | 0.8455 | 0.8792 | 0.8503 | 0.8503 | 0.8755 | 0.8391 |
+| RoBERTa-large v2 | mams | semeval | 0.7618 | 0.6853 | 0.6835 | 0.7625 | 0.7573 | 0.7113 | 0.7113 |
+| RoBERTa-large v2 | mams | mams | 0.8563 | 0.8295 | 0.8357 | 0.8563 | 0.8563 | 0.8718 | 0.8493 |
+
+Phenomenon counts in the test sets: {"semeval": {"negation": 143, "contrast": 79, "multi_aspect": 379, "multi_polarity": 103, "implicit": 142, "long_range": 142}, "mams": {"negation": 440, "contrast": 414, "multi_aspect": 1336, "multi_polarity": 1336, "implicit": 273, "long_range": 491}}
+
+## Transformer training time (s)
+
+{
+ "ate/roberta-v2/semeval": 164.2,
+ "asc/roberta-v2/semeval": 103.2,
+ "ate/roberta-large-v2/semeval": 476.3,
+ "asc/roberta-large-v2/semeval": 275.7,
+ "ate/roberta-v2/mams": 243.3,
+ "asc/roberta-v2/mams": 353.8,
+ "ate/roberta-large-v2/mams": 686.6,
+ "asc/roberta-large-v2/mams": 1199.3
+}
+
+20:28:29 # v2 improvements over v1
+
+Reference = v1 RoBERTa-base (the best v1 model). Δ = v2 − v1 (absolute points on the 0–1 scale).
+
+## What changed and why
+
+| v1 observation | v2 change |
+|---|---|
+| Train macro-F1 → 0.94–0.98 while val plateaus at epoch ~2 and val loss rises (over-fitting) | label smoothing 0.1, FGM adversarial training on embeddings (ε=0.5), layer-wise LR decay so lower layers move less |
+| [CLS]-only head cannot tell which aspect it is judging in multi-aspect sentences (MAMS: every sentence) | aspect wrapped with `#` markers in the sentence + head on [CLS] ⊕ mean(aspect sub-word states) |
+| Val F1 jumps ±3 pts between checks on SemEval's 221-aspect val split | 4 validation checks per epoch, batch 16 (more updates), patience in epochs |
+| ATE decoding could emit invalid `O → I` sequences | BIO-constrained Viterbi decoding |
+| Base-size encoder | RoBERTa-large (bf16, gradient checkpointing to fit the 8 GB GPU) |
+
+## ASC macro-F1
+
+| train | test | setting | v1 RoBERTa-base | RoBERTa-base v2 | Δ RoBERTa-base v2 | RoBERTa-large v2 | Δ RoBERTa-large v2 |
+|---|---|---|---|---|---|---|---|
+| semeval | semeval | in-domain | 0.7748 | 0.7790 | +0.0043 | 0.7988 | +0.0240 |
+| semeval | mams | cross-dataset | 0.4824 | 0.5739 | +0.0915 | 0.5416 | +0.0592 |
+| mams | semeval | cross-dataset | 0.7208 | 0.6911 | -0.0297 | 0.7321 | +0.0113 |
+| mams | mams | in-domain | 0.8403 | 0.8449 | +0.0046 | 0.8506 | +0.0103 |
+
+## ASC accuracy
+
+| train | test | setting | v1 RoBERTa-base | RoBERTa-base v2 | Δ RoBERTa-base v2 | RoBERTa-large v2 | Δ RoBERTa-large v2 |
+|---|---|---|---|---|---|---|---|
+| semeval | semeval | in-domain | 0.8041 | 0.8197 | +0.0157 | 0.8323 | +0.0282 |
+| semeval | mams | cross-dataset | 0.4873 | 0.5831 | +0.0958 | 0.5561 | +0.0689 |
+| mams | semeval | cross-dataset | 0.7539 | 0.7273 | -0.0266 | 0.7618 | +0.0078 |
+| mams | mams | in-domain | 0.8451 | 0.8503 | +0.0052 | 0.8563 | +0.0112 |
+
+## ASC neutral-class F1 (weakest class in v1)
+
+| train | test | setting | v1 RoBERTa-base | RoBERTa-base v2 | Δ RoBERTa-base v2 | RoBERTa-large v2 | Δ RoBERTa-large v2 |
+|---|---|---|---|---|---|---|---|
+| semeval | semeval | in-domain | 0.6809 | 0.6272 | -0.0537 | 0.6906 | +0.0097 |
+| semeval | mams | cross-dataset | 0.3313 | 0.4080 | +0.0766 | 0.3157 | -0.0157 |
+| mams | semeval | cross-dataset | 0.6528 | 0.6104 | -0.0424 | 0.6715 | +0.0187 |
+| mams | mams | in-domain | 0.8645 | 0.8724 | +0.0079 | 0.8765 | +0.0120 |
+
+## ATE span F1
+
+| train | test | setting | v1 RoBERTa-base | RoBERTa-base v2 | Δ RoBERTa-base v2 | RoBERTa-large v2 | Δ RoBERTa-large v2 |
+|---|---|---|---|---|---|---|---|
+| semeval | semeval | in-domain | 0.8591 | 0.8456 | -0.0135 | 0.8607 | +0.0016 |
+| semeval | mams | cross-dataset | 0.4396 | 0.3825 | -0.0571 | 0.3808 | -0.0588 |
+| mams | semeval | cross-dataset | 0.3948 | 0.4149 | +0.0201 | 0.4032 | +0.0084 |
+| mams | mams | in-domain | 0.7620 | 0.7801 | +0.0181 | 0.7683 | +0.0063 |
+
+## End-to-end ATE → ASC pair F1
+
+| train | test | setting | v1 RoBERTa-base | RoBERTa-base v2 | Δ RoBERTa-base v2 | RoBERTa-large v2 | Δ RoBERTa-large v2 |
+|---|---|---|---|---|---|---|---|
+| semeval | semeval | in-domain | 0.6914 | 0.7017 | +0.0103 | 0.7095 | +0.0181 |
+| semeval | mams | cross-dataset | 0.2757 | 0.2883 | +0.0126 | 0.2950 | +0.0193 |
+| mams | semeval | cross-dataset | 0.2986 | 0.3079 | +0.0093 | 0.3257 | +0.0271 |
+| mams | mams | in-domain | 0.6550 | 0.6713 | +0.0163 | 0.6619 | +0.0069 |
+
+## Generalisation gap at the selected checkpoint (train − val main metric)
+
+| model | task | train | best_epoch | train_metric | val_metric | gap |
+|---|---|---|---|---|---|---|
+| BERT-base v1 | asc | mams | 5.5000 | 0.9876 | 0.8243 | 0.1634 |
+| RoBERTa-base v1 | asc | mams | 5.0000 | 0.9822 | 0.8306 | 0.1516 |
+| RoBERTa-base v2 | asc | mams | 1.5000 | 0.9104 | 0.8322 | 0.0782 |
+| RoBERTa-large v2 | asc | mams | 2.7500 | 0.9602 | 0.8315 | 0.1287 |
+| BERT-base v1 | asc | semeval | 3.5000 | 0.8926 | 0.7095 | 0.1830 |
+| RoBERTa-base v1 | asc | semeval | 2.5000 | 0.8374 | 0.7877 | 0.0497 |
+| RoBERTa-base v2 | asc | semeval | 4.5040 | 0.9944 | 0.7758 | 0.2186 |
+| RoBERTa-large v2 | asc | semeval | 1.7480 | 0.9186 | 0.7910 | 0.1275 |
+| BERT-base v1 | ate | mams | 5.0000 | 0.9728 | 0.7761 | 0.1967 |
+| RoBERTa-base v1 | ate | mams | 6.5040 | 0.9591 | 0.7840 | 0.1751 |
+| RoBERTa-base v2 | ate | mams | 3.0000 | 0.8742 | 0.7893 | 0.0849 |
+| RoBERTa-large v2 | ate | mams | 5.0000 | 0.9296 | 0.7802 | 0.1494 |
+| BERT-base v1 | ate | semeval | 5.5000 | 0.9977 | 0.8294 | 0.1683 |
+| RoBERTa-base v1 | ate | semeval | 8.0000 | 0.9993 | 0.8657 | 0.1336 |
+| RoBERTa-base v2 | ate | semeval | 3.7500 | 0.9886 | 0.8756 | 0.1130 |
+| RoBERTa-large v2 | ate | semeval | 4.0000 | 0.9948 | 0.8596 | 0.1352 |
+
+Figures: `improvements/v1_vs_v2_*.png`, `improvements/*_val_curves_v1_vs_v2.png`; per-run training curves: `transformers/<task>/<run>/training_curves.png`; full tables: `summary.md`.
+
+20:28:29 
+ALL DONE in 32.9 min - results in E:\AI ML\NLP Project\results_v2

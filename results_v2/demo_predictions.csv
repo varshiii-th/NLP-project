@@ -1,0 +1,11 @@
+sentence,aspect,polarity,confidence
+"The laptop has an excellent display, but the battery life is disappointing.",display,positive,0.947
+"The laptop has an excellent display, but the battery life is disappointing.",battery life,negative,0.933
+The battery life is excellent but the keyboard is uncomfortable.,battery life,positive,0.944
+The battery life is excellent but the keyboard is uncomfortable.,keyboard,negative,0.939
+"Customer support never answered my emails, although the screen is gorgeous.",Customer support,negative,0.936
+"Customer support never answered my emails, although the screen is gorgeous.",screen,positive,0.937
+"It boots up fast and the trackpad works fine, but the speakers are tinny.",boots up,positive,0.947
+"It boots up fast and the trackpad works fine, but the speakers are tinny.",trackpad,positive,0.942
+"It boots up fast and the trackpad works fine, but the speakers are tinny.",speakers,negative,0.949
+I use it mostly for browsing and the price was okay.,price,positive,0.947
