@@ -1,0 +1,144 @@
+sid,text,aspect,polarity,pred,phenomena
+958:1,"Other than not being a fan of click pads (industry standard these days) and the lousy internal speakers, it's hard for me to find things about this notebook I don't like, especially considering the $350 price tag.",price tag,positive,negative,"negation,multi_aspect,multi_polarity,long_range"
+792:2,The baterry is very longer.,baterry,positive,negative,implicit
+910:1,"This laptop has only 2 USB ports, and they are both on the same side.",USB ports,negative,neutral,implicit
+1141:1,I would have given it 5 starts was it not for the fact that it had Windows 8,Windows 8,negative,positive,"negation,implicit"
+315:1,The Mountain Lion OS is not hard to figure out if you are familiar with Microsoft Windows.,Mountain Lion OS,positive,neutral,"negation,multi_aspect,multi_polarity"
+17:4,"However, I can refute that OSX is ""FAST"".",OSX,negative,positive,contrast
+469:1,From the speed to the multi touch gestures this operating system beats Windows easily.,Windows,negative,positive,"multi_aspect,multi_polarity,implicit"
+286:15,"I opted for the SquareTrade 3-Year Computer Accidental Protection Warranty ($1500-2000) which also support ""accidents"" like drops and spills that are NOT covered by AppleCare.",SquareTrade 3-Year Computer Accidental Protection Warranty,positive,neutral,"negation,multi_aspect,multi_polarity"
+286:15,"I opted for the SquareTrade 3-Year Computer Accidental Protection Warranty ($1500-2000) which also support ""accidents"" like drops and spills that are NOT covered by AppleCare.",AppleCare,negative,neutral,"negation,multi_aspect,multi_polarity,long_range"
+417:1,"It's been time for a new laptop, and the only debate was which size of the Mac laptops, and whether to spring for the retina display.",size,neutral,positive,"multi_aspect,implicit"
+19:1,Apple removed the DVD drive Firewire port (will work with adapter) and put the SDXC slot in a silly position on the back.,DVD drive Firewire port,neutral,negative,"multi_aspect,multi_polarity"
+19:1,Apple removed the DVD drive Firewire port (will work with adapter) and put the SDXC slot in a silly position on the back.,adapter,neutral,negative,"multi_aspect,multi_polarity"
+787:272,Startup times are incredibly long: over two minutes.,Startup times,negative,positive,
+786:1423,It is really thick around the battery.,battery,neutral,negative,implicit
+856:1,I am still in the process of learning about its features.,features,neutral,positive,implicit
+895:1,I did swap out the hard drive for a Samsung 830 SSD which I highly recommend.,Samsung 830 SSD,positive,neutral,"multi_aspect,multi_polarity"
+491:1,Took a long time trying to decide between one with retina display and one without.,retina display,neutral,negative,"negation,implicit"
+927:1,HOWEVER I chose two day shipping and it took over a week to arrive.,shipping,negative,neutral,"contrast,implicit"
+462:1,"I used windows XP, windows Vista, and Windows 7 extensively.",Windows 7,neutral,positive,"multi_aspect,implicit"
+269:1,On start up it asks endless questions just so itune can sell you more of their products.,start up,negative,positive,"multi_aspect,implicit"
+269:1,On start up it asks endless questions just so itune can sell you more of their products.,itune,negative,positive,"multi_aspect,implicit"
+332:1,I Have been a Pc user for a very long time now but I will get used to this new OS.,OS,neutral,positive,"contrast,implicit"
+29:312,I never tried any external mics with that iMac.,external mics,neutral,negative,"negation,implicit"
+1:26,The only issue came when I tried scanning to the mac.,scanning,negative,neutral,long_range
+993:1,I think this is about as good as it gets at anything close to this price point.,price point,neutral,negative,long_range
+383:1,"I wanted a computer that was quite, fast, and that had overall great performance.",performance,neutral,positive,
+923:1,"I use it mostly for content creation (Audio, video, photo editing) and its reliable.",content creation,positive,neutral,"multi_aspect,long_range"
+923:1,"I use it mostly for content creation (Audio, video, photo editing) and its reliable.",Audio,positive,neutral,"multi_aspect,long_range"
+923:1,"I use it mostly for content creation (Audio, video, photo editing) and its reliable.",video,positive,neutral,"multi_aspect,long_range"
+923:1,"I use it mostly for content creation (Audio, video, photo editing) and its reliable.",photo editing,positive,neutral,multi_aspect
+382:15,"The only solution is to turn the brightness down, etc.",brightness,neutral,negative,implicit
+29:319,USB3 Peripherals are noticably less expensive than the ThunderBolt ones.,USB3 Peripherals,positive,negative,"multi_aspect,multi_polarity"
+842:1,And mine had broke but I sent it in under warranty-no problems.,warranty,positive,neutral,"negation,contrast"
+962:1,"Unfortunately, it runs XP and Microsoft is dropping support next April.",XP,neutral,negative,"contrast,multi_aspect,multi_polarity"
+926:1,It is made of such solid construction and since I have never had a Mac using my iPhone helped me get used to the system a bit.,system,neutral,positive,"negation,multi_aspect,multi_polarity,long_range"
+29:783,"There is no HDMI receptacle, nor is there an SD card slot located anywhere on the device.",HDMI receptacle,neutral,negative,"negation,multi_aspect,implicit"
+29:783,"There is no HDMI receptacle, nor is there an SD card slot located anywhere on the device.",SD card slot,neutral,negative,"negation,multi_aspect,implicit"
+355:1,"It shouldn't happen like that, I don't have any design app open or anything.",design app,neutral,negative,"negation,long_range"
+671:1,Price was higher when purchased on MAC when compared to price showing on PC when I bought this product.,price,positive,negative,"multi_aspect,multi_polarity,implicit"
+25:1,It's silent and has a very small footprint on my desk.,footprint,positive,negative,long_range
+204:1,Apple is aware of this issue and this is either old stock or a defective design involving the intel 4000 graphics chipset.,intel 4000 graphics chipset,neutral,negative,multi_aspect
+204:1,Apple is aware of this issue and this is either old stock or a defective design involving the intel 4000 graphics chipset.,design,neutral,negative,multi_aspect
+786:713,"I just bought the new MacBook Pro, the 13"" model, and I can't believe Apple keeps making the same mistake with regard to USB ports.",USB ports,negative,neutral,negation
+898:3,It wakes in less than a second when I open the lid.,wakes,positive,negative,"multi_aspect,multi_polarity,implicit"
+181:1,After fumbling around with the OS I started searching the internet for a fix and found a number of forums on fixing the issue.,OS,negative,neutral,long_range
+787:193,And as for all the fancy finger swipes -- I just gave up and attached a mouse.,mouse,neutral,negative,"multi_aspect,multi_polarity,long_range"
+447:1,"I needed a laptop with big storage, a nice screen and fast so I can photoshop without any problem.",storage,neutral,positive,"negation,multi_aspect"
+447:1,"I needed a laptop with big storage, a nice screen and fast so I can photoshop without any problem.",screen,neutral,positive,"negation,multi_aspect"
+447:1,"I needed a laptop with big storage, a nice screen and fast so I can photoshop without any problem.",photoshop,neutral,positive,"negation,multi_aspect"
+928:1,I like coming back to Mac OS but this laptop is lacking in speaker quality compared to my $400  old HP laptop.,Mac OS,positive,negative,"contrast,multi_aspect,multi_polarity"
+689:1,I haven't tried the one with retina display... Maybe in the future.,retina display,neutral,negative,"negation,implicit"
+313:1,"Performance is much much better on the Pro, especially if you install an SSD on it.",Performance,positive,neutral,multi_aspect
+313:1,"Performance is much much better on the Pro, especially if you install an SSD on it.",SSD,positive,neutral,"multi_aspect,long_range"
+286:1,"Note, however, that any existing MagSafe accessories you have will not work with the MagSafe 2 connection.",MagSafe 2 connection,negative,neutral,"negation,contrast,multi_aspect,multi_polarity"
+1074:1,"The only thing I dislike is the touchpad, alot of the times its unresponsive and does things I dont want it too, I would recommend using a mouse with it.",mouse,neutral,negative,"negation,multi_aspect,multi_polarity"
+202:1,"The Mac mini is about 8x smaller than my old computer which is a huge bonus and runs very quiet, actually the fans aren't audible unlike my old pc",fans,positive,neutral,"negation,multi_aspect"
+968:5,"Also, in using the built-in camera, my voice recording for my vlog sounds like the interplanetary transmissions in the ""Star Wars"" saga.",voice recording,negative,neutral,"multi_aspect,multi_polarity,long_range"
+294:0,You just cannot beat the functionality of an Apple device.,functionality,positive,negative,"negation,implicit"
+29:186,Came with iPhoto and garage band already loaded.,iPhoto,neutral,positive,"multi_aspect,implicit"
+29:186,Came with iPhoto and garage band already loaded.,garage band,neutral,positive,"multi_aspect,implicit"
+26:4,"Logic board utterly fried, cried, and laid down and died.",Logic board,positive,negative,
+479:5,"Having heard from friends and family about how reliable a Mac product is, I never expected to have an application crash within the first month, but I did.",application,negative,neutral,"negation,contrast"
+420:1,"fast, great screen, beautiful apps for a laptop;priced at 1100 on the apple website;amazon had it for 1098+ tax -  plus i had a 10% off coupon from amazon-cost me 998 plus tax- 1070- OTD!",priced,neutral,positive,"multi_aspect,multi_polarity,long_range"
+420:1,"fast, great screen, beautiful apps for a laptop;priced at 1100 on the apple website;amazon had it for 1098+ tax -  plus i had a 10% off coupon from amazon-cost me 998 plus tax- 1070- OTD!",cost,neutral,positive,"multi_aspect,multi_polarity,long_range"
+872:1,12.44 seconds to boot.,boot,neutral,positive,implicit
+267:1,"The Like New condition of the iMac MC309LL/A on Amazon is at $900+ level only, and it is a Quad-Core 2.5 GHz CPU (similar to the $799 Mini), with Radeon HD 6750M 512MB graphic card (this mini is integrated Intel 4000 card), and it even comes with wireless Apple Keyboard and Mouse, all put together in neat and nice package.",Quad-Core 2.5 GHz CPU,neutral,positive,"multi_aspect,multi_polarity,long_range"
+267:1,"The Like New condition of the iMac MC309LL/A on Amazon is at $900+ level only, and it is a Quad-Core 2.5 GHz CPU (similar to the $799 Mini), with Radeon HD 6750M 512MB graphic card (this mini is integrated Intel 4000 card), and it even comes with wireless Apple Keyboard and Mouse, all put together in neat and nice package.",integrated Intel 4000 card,neutral,positive,"multi_aspect,multi_polarity"
+267:1,"The Like New condition of the iMac MC309LL/A on Amazon is at $900+ level only, and it is a Quad-Core 2.5 GHz CPU (similar to the $799 Mini), with Radeon HD 6750M 512MB graphic card (this mini is integrated Intel 4000 card), and it even comes with wireless Apple Keyboard and Mouse, all put together in neat and nice package.",wireless Apple Keyboard and Mouse,neutral,positive,"multi_aspect,multi_polarity,long_range"
+419:2,Put a cover on it and is a little better but that is my only complaint.,cover,neutral,negative,"contrast,long_range"
+291:6,Within a few hours I was using the gestures unconsciously.,gestures,positive,neutral,implicit
+786:633,This mac does come with an extender cable and I'm using mine right now hoping the cable will stay nice for the many years I plan on using this mac.,cable,positive,neutral,"multi_aspect,multi_polarity"
+1101:1,Not sure on Windows 8.,Windows 8,neutral,negative,"negation,implicit"
+997:1,This newer netbook has no hard drive or network lights.,hard drive,neutral,negative,"negation,multi_aspect"
+997:1,This newer netbook has no hard drive or network lights.,network lights,neutral,negative,"negation,multi_aspect"
+787:207,I was given a demonstration of Windows 8.,Windows 8,neutral,positive,implicit
+1056:1,"It was important that it was powerful enough to do all of the tasks he needed on the internet, word processing, graphic design and gaming.",internet,positive,neutral,"multi_aspect,long_range"
+1056:1,"It was important that it was powerful enough to do all of the tasks he needed on the internet, word processing, graphic design and gaming.",word processing,positive,neutral,"multi_aspect,long_range"
+227:1,"I like the Mini Mac it was easy to setup and install, but I am learning as I go and could use a tutorial to learn how to use some of the features I was use to on the PC especially the right mouse click menu.",tutorial,neutral,positive,"contrast,multi_aspect,multi_polarity,long_range"
+227:1,"I like the Mini Mac it was easy to setup and install, but I am learning as I go and could use a tutorial to learn how to use some of the features I was use to on the PC especially the right mouse click menu.",features,neutral,positive,"contrast,multi_aspect,multi_polarity,long_range"
+494:1,Buy the separate RAM memory and you will have a rocket!,RAM memory,positive,neutral,implicit
+1077:1,"WiFi capability, disk drive and multiple USB ports to connect scale and printers was all that was required.",disk drive,positive,neutral,multi_aspect
+1077:1,"WiFi capability, disk drive and multiple USB ports to connect scale and printers was all that was required.",USB ports,positive,neutral,"multi_aspect,long_range"
+578:1,I was concerned that the downgrade to the regular hard drive would make it unacceptably slow but I need not have worried - this machine is the fastest I have ever owned...,regular hard drive,positive,negative,"negation,contrast"
+754:11,No HDMI port.,HDMI port,neutral,negative,"negation,implicit"
+275:12,Plus two finger clicking as a replacement for the right click button is surprisingly intuitive.,right click button,neutral,positive,"multi_aspect,multi_polarity"
+397:17,The SuperDrive is quiet.,SuperDrive,positive,negative,
+1035:1,The power plug has to be connected to the power adaptor to charge the battery but won't stay connected.,power adaptor,neutral,negative,"negation,contrast,multi_aspect,multi_polarity,long_range"
+1035:1,The power plug has to be connected to the power adaptor to charge the battery but won't stay connected.,battery,neutral,negative,"negation,contrast,multi_aspect,multi_polarity"
+47:1,Fan only comes on when you are playing a game.,Fan,neutral,negative,"multi_aspect,implicit"
+961:1,"Which it did not have, only 3 USB 2 ports.",USB 2 ports,neutral,negative,"negation,implicit"
+279:2,No startup disk was not included but that may be my fault.,startup disk,neutral,negative,"negation,contrast,long_range"
+716:1,It is very fast and has everything that I need except for a word program.,word program,negative,positive,"contrast,long_range"
+217:1,Needs a CD/DVD drive and a bigger power switch.,CD/DVD drive,neutral,negative,"multi_aspect,multi_polarity,implicit"
+62:1,"I switched to this because I wanted something different, even though I miss windows.",windows,positive,neutral,contrast
+941:1,"At first, I feel a little bit uncomfortable in using the Mac system.",Mac system,negative,neutral,
+440:1,I am used to computers with windows so I am having a little difficulty finding my way around.,windows,neutral,negative,long_range
+626:1,It just works out of the box and you have a lot of cool software included with the OS.,OS,neutral,positive,"multi_aspect,multi_polarity,long_range"
+692:1,Premium price for the OS more than anything else.,OS,neutral,positive,"multi_aspect,multi_polarity,implicit"
+786:1301,"The sound as mentioned earlier isn't the best, but it can be solved with headphones.",headphones,neutral,negative,"negation,contrast,long_range"
+258:1,"If you ask me, for this price it should be included.",price,negative,positive,implicit
+718:1,the retina display display make pictures i took years ago jaw dropping.,retina display display,positive,negative,implicit
+325:1,"Additionally, there is barely a ventilation system in the computer, and even the simple activity of watching videos let alone playing steam games causes the laptop to get very very hot, and in fact impossible to keep on lap.",watching videos,neutral,negative,"negation,multi_aspect,multi_polarity,long_range"
+325:1,"Additionally, there is barely a ventilation system in the computer, and even the simple activity of watching videos let alone playing steam games causes the laptop to get very very hot, and in fact impossible to keep on lap.",playing steam games,neutral,negative,"negation,multi_aspect,multi_polarity,long_range"
+965:1,"Chatting with Acer support, I was advised the problem was corrupted operating system files.",Acer support,neutral,negative,multi_aspect
+965:1,"Chatting with Acer support, I was advised the problem was corrupted operating system files.",operating system files,neutral,negative,multi_aspect
+50:1,It's been a couple weeks since the purchase and I'm struggle with finding the correct keys (but that was expected).,keys,neutral,negative,contrast
+786:237,Now that I have upgraded to Lion I am much happier about MAC OS and have just bought an iMac for office.,Lion,positive,neutral,multi_aspect
+786:179,User upgradeable RAM and HDD.,RAM,positive,neutral,multi_aspect
+786:331,But I wanted the Pro for the CD/DVD player.,CD/DVD player,positive,neutral,"contrast,implicit"
+500:1,I was a little worry at first because I don't have a lot of experience with os.x and windows has always been second nature to me after many years of using windows.,windows,positive,neutral,"negation,multi_aspect,multi_polarity,long_range"
+574:1,With the softwares supporting the use of other OS makes it much better.,OS,neutral,positive,multi_aspect
+574:1,With the softwares supporting the use of other OS makes it much better.,softwares,neutral,positive,multi_aspect
+891:1,"At home and the office it gets plugged into an external 24"" LCD screen, so built in screen size is not terribly important.",built in screen size,neutral,positive,"negation,multi_aspect"
+65:1,Just beware no DVD slot so when I went to install software I had on CD I couldn't.,DVD slot,neutral,negative,"negation,multi_aspect,multi_polarity"
+245:1,No Cd Rom in the new version there's no way I'm spending that kind of money on something has less features than the older version.,Cd Rom,neutral,negative,"negation,multi_aspect,multi_polarity,implicit"
+123:1,"Put a SSD and use a 21"" LED screen, this set up is silky smooth!","21"" LED screen",neutral,positive,"multi_aspect,multi_polarity"
+123:1,"Put a SSD and use a 21"" LED screen, this set up is silky smooth!",SSD,neutral,positive,"multi_aspect,multi_polarity,long_range"
+11:1,"The case is now slightly larger than the previous generation, but the lack of an external power supply justifies the small increase in size.",external power supply,neutral,negative,"contrast,multi_aspect,multi_polarity"
+1009:1,"I had to buy a wireless mouse to go with it, as I am old school and hate the pad, but knew that before I bought it, now it works great, need to get adjusted to the key board, as I am used to a bigger one and pounding.",wireless mouse,neutral,negative,"contrast,multi_aspect,multi_polarity,long_range"
+1009:1,"I had to buy a wireless mouse to go with it, as I am old school and hate the pad, but knew that before I bought it, now it works great, need to get adjusted to the key board, as I am used to a bigger one and pounding.",key board,neutral,negative,"contrast,multi_aspect,multi_polarity,long_range"
+1143:1,It's a decent computer for the price and hopefully it will last a long time.,price,neutral,positive,
+805:1,I will upgrade the ram myself (because with this model you can you can do it) later on.,upgrade the ram,positive,neutral,implicit
+568:1,The price is 200 dollars down.,price,positive,negative,implicit
+75:1,"this Mac Mini does not have a built-in mic, and it would seem that its Mac OS 10.9 does not handle external microphones properly.",built-in mic,neutral,negative,"negation,multi_aspect,multi_polarity,long_range"
+75:1,"this Mac Mini does not have a built-in mic, and it would seem that its Mac OS 10.9 does not handle external microphones properly.",external microphones,neutral,negative,"negation,multi_aspect,multi_polarity"
+859:1,A lot of features and shortcuts on the MBP that I was never exposed to on a normal PC.,features,neutral,positive,"negation,multi_aspect,implicit"
+859:1,A lot of features and shortcuts on the MBP that I was never exposed to on a normal PC.,shortcuts,neutral,positive,"negation,multi_aspect,implicit"
+768:1,Wasn't sure if I was going to like it much less love it so I went to a local best buy and played around with the IOS system on a Mac Pro and it was totally unique and different.,IOS system,positive,neutral,"negation,long_range"
+933:1,"The only thing I miss are the ""Home/End"" type keys and other things that I grew accustomed to after so long.","""Home/End"" type keys",neutral,negative,
+547:16,i have dropped mine a couple times with only a slim plastic case covering it.,slim plastic case,neutral,negative,implicit
+1107:3,Fine if you have a touch screen.,touch screen,neutral,positive,long_range
+884:1,I had to get Apple Customer Support to correct the problem.,Apple Customer Support,neutral,negative,
+834:1,A veryimportant feature is Firewire 800 which in my experience works better then USB3 (in PC enabled with USB3)I was not originally sold on the MAC OS I felt it was inferior in many ways To Windows 7.,Firewire 800,positive,negative,"negation,multi_aspect,multi_polarity,long_range"
+834:1,A veryimportant feature is Firewire 800 which in my experience works better then USB3 (in PC enabled with USB3)I was not originally sold on the MAC OS I felt it was inferior in many ways To Windows 7.,USB3,neutral,negative,"negation,multi_aspect,multi_polarity,long_range"
+834:1,A veryimportant feature is Firewire 800 which in my experience works better then USB3 (in PC enabled with USB3)I was not originally sold on the MAC OS I felt it was inferior in many ways To Windows 7.,Windows 7,positive,negative,"negation,multi_aspect,multi_polarity,long_range"
+786:1472,The first time I used the card reader it took half an hour and a pair of tweezers to remove the card.,card reader,negative,neutral,"multi_aspect,implicit"
+786:1472,The first time I used the card reader it took half an hour and a pair of tweezers to remove the card.,remove the card,negative,neutral,"multi_aspect,implicit"
+755:1,"After replacing the spinning hard disk with an ssd drive, my mac is just flying.",spinning hard disk,neutral,negative,"multi_aspect,multi_polarity"
+755:1,"After replacing the spinning hard disk with an ssd drive, my mac is just flying.",ssd drive,positive,negative,"multi_aspect,multi_polarity"
+762:7,With the needs of a professional photographer I generally need to keep up with the best specs.,specs,neutral,negative,
+306:2,the latest version does not have a disc drive.,disc drive,neutral,negative,"negation,implicit"
+280:11,Screen - although some people might complain about low res which I think is ridiculous.,Screen,positive,negative,"contrast,multi_aspect,long_range"
+280:11,Screen - although some people might complain about low res which I think is ridiculous.,res,positive,negative,"contrast,multi_aspect"
